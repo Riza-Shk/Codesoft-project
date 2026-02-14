@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create Quiz | Quiz Maker</title>
+  <link rel="stylesheet" href="create-quiz.css" />
+</head>
+
+<body>
+  <div id="mainContainer">
+    <div id="quizTitle">
+      <h2 id="create-quiz">Create Quiz</h2>
+    </div>
+    <form id="quizForm">
+      <p id="questionCount">Questions added: 0</p>
+      <div id="QuizTitle">
+        <label>Quiz Title</label>
+        <input id="quizT" type="text" required />
+      </div>
+      <div id="Question">
+        <label>Question</label>
+        <input id="questionText" type="text" >
+      </div>
+
+      <div class="option">
+        <input type="radio" name="correctOption" value="0">
+        <input id="opt1" type="text" placeholder="Option 1" >
+      </div>
+      <div class="option">
+        <input type="radio" name="correctOption" value="1">
+        <input id="opt2" type="text" placeholder="Option 2" >
+      </div>
+      <div class="option">
+        <input type="radio" name="correctOption" value="2">
+        <input id="opt3" type="text" placeholder="Option 3">
+      </div>
+      <div class="option">
+        <input type="radio" name="correctOption" value="3">
+        <input id="opt4" type="text" placeholder="Option 4">
+      </div>
+      <div id="btnGroup">
+        <button type="button" id="addQuestion">Add Question</button>
+        <button type="submit">Save Quiz</button>
+      </div>
+
+    </form>
+  </div>
+  </div>
+  
+  <script src="authGuard.js"></script>
+  <script src="create-quiz.js"></script>
+</body>
+
+</html>

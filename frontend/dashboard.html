@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | Quiz Maker</title>
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+
+  <div class="dashboard">
+    <!-- sidebar -->
+    <aside class="sidebar">
+        <h2 class="logo">Quiz Maker</h2>
+        <ul class="nav">
+            <li><a href=#>Dashboard</a></li>
+            <li><a href="./create-quiz.html">Create Quiz</a></li>
+            <li><a href="./take-quiz.html">Take Quiz</a></li>
+            <li class="disabled">Profile</li>
+            <li><a href="./history.html">History</a></li>
+            <li class="disabled">Settings</li>
+            <li class="logout">
+            <a href="#" id="logoutBtn">Log out</a>
+            </li>
+
+        </ul>
+    </aside>
+
+    <!-- main content -->
+    <main class="main">
+        <div id="nameContainer">
+        <h1 id="mainName">Welcome, Riza!</h1>
+        
+        </div>
+        <div id="messageContainer">
+        <p>Ready to create or take a quiz?</p>
+        </div>
+        <div id="actions">
+            <a id="create" href="./create-quiz.html"><p>Create Quiz</p> </a>
+            <a id="take" href="./take-quiz.html"><p>Take Quiz</p></a>
+        </div>
+    </main>
+  </div>
+
+<script src="authGuard.js"></script>
+<script src="dashboard.js"></script>
+.
+</body>
+</html>

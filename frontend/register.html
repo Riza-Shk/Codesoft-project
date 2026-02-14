@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register | Quiz Maker</title>
+    <link rel="stylesheet" href="register.css" />
+  </head>
+  <body>
+    <div id="registerContainer">
+      <h3 id="register">Register</h3>
+      <form id="registerForm">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" required placeholder="Enter your name" />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" required placeholder="abc@gmail.com" />
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            required
+            placeholder="eg.u3e83r7"
+          />
+        </div>
+        <button id="submit" type="submit">Create Account</button>
+        <div id="loginLink">
+          <p>Already have an account?
+          <a href="./login.html" id="login">Sign in</a>
+          </p>
+        </div>
+      </form>
+    </div>
+
+    <script src="./register.js"></script>
+  </body>
+</html>

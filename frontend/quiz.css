@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  background: linear-gradient(135deg, #1c1f2c, #ca74e1);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz-container {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  width: 400px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.option {
+  margin-top: 15px;
+}
+
+.option button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+  background: #f4f6fb;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.option button:hover {
+  background: #edacff;
+}
+/* Quiz completed screen */
+
+.result-container {
+  background: white;
+  padding: 50px 40px;
+  border-radius: 24px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  animation: popIn 0.5s ease;
+}
+
+.result-container h2 {
+  font-size: 28px;
+  color: #1c1f2c;
+  margin-bottom: 15px;
+}
+
+.result-container p {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.score {
+  font-size: 36px;
+  font-weight: bold;
+  color: #2c3768;
+  margin-bottom: 30px;
+}
+
+.result-container button {
+  padding: 14px 30px;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  background: #2c3768;
+  color: white;
+  transition: 0.3s;
+}
+
+.result-container button:hover {
+  background: #ca74e1;
+}
+
+/* small animation */
+@keyframes popIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.option button.correct {
+  background: #4caf50;
+  color: white;
+}
+
+.option button.wrong {
+  background: #f44336;
+  color: white;
+}
+
+.option button:disabled {
+  cursor: not-allowed;
+}

@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+/* #hero {
+    text-align: center;
+    margin: 50% auto;
+}
+/* html, body {
+    height: 100%;
+} */
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1c1f2c, #ca74e1, #edacff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: helvetica, sans-serif;
+}
+h1 {
+    padding: 15px;
+    font-size: 80px;
+    color: white;
+}
+#slogan {
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+#startButton {
+    padding: 20px 50px;
+    border-radius: 50px;
+    font-size: 20px;
+    color: #ffffff;
+    border: 3px solid white;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+#startButton:hover {
+    background: white;
+    color: #1c1f2c;
+}
