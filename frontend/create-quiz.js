@@ -44,7 +44,7 @@ addQuestionBtn.addEventListener("click", () => {
   };
 
   questions.push(questionData);
-  questionCountEl.textContent = `Questions added: ${questions.length}`;
+  questionCount.textContent = `Questions added: ${questions.length}`;
   console.log("Questions added:", questions);
 
   // Clear inputs after adding question
