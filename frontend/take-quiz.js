@@ -21,3 +21,21 @@ fetch("https://codesoft-backend-y6ph.onrender.com/api/quizzes")
 function startQuiz(id) {
   window.location.href = `quiz.html?id=${id}`;
 }
+function deleteQuiz(id) {
+  const confirmDelete = confirm("Are you sure you want to delete this quiz?");
+
+  if (!confirmDelete) return;
+
+  fetch(`https://codesoft-backend-y6ph.onrender.com/api/quizzes/${id}`, {
+    method: "DELETE",
+  })
+    .then(res => res.json())
+    .then(data => {
+      alert("Quiz deleted successfully");
+      location.reload(); // refresh quiz list
+    })
+    .catch(err => {
+      console.error("Delete failed", err);
+      alert("Failed to delete quiz");
+    });
+}
