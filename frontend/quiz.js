@@ -59,7 +59,7 @@ function showResult() {
   const userId = localStorage.getItem("userId");
 
   // save history to backend
-  fetch("http://127.0.0.1:5000/api/history/save", {
+  fetch("https://codesoft-backend-y6ph.onrender.com/api/history/save", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
