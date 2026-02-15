@@ -1,4 +1,4 @@
-fetch("http://127.0.0.1:5000/api/quizzes")
+fetch("https://codesoft-backend-y6ph.onrender.com/api/quizzes")
   .then(res => res.json())
   .then(quizzes => {
     const quizList = document.getElementById("quizList");

@@ -5,7 +5,7 @@ let quiz;
 let currentIndex = 0;
 let score = 0;
 
-fetch(`http://127.0.0.1:5000/api/quizzes/${quizId}`)
+fetch(`https://codesoft-backend-y6ph.onrender.com/api/quizzes/${quizId}`)
   .then(res => res.json())
   .then(data => {
     quiz = data;

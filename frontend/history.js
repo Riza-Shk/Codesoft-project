@@ -4,7 +4,7 @@ if (!userId) {
   window.location.href = "login.html";
 }
 
-fetch(`http://127.0.0.1:5000/api/history/${userId}`)
+fetch(`https://codesoft-backend-y6ph.onrender.com/api/history/${userId}`)
   .then(res => res.json())
   .then(history => {
     const list = document.getElementById("historyList");
