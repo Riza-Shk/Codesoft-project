@@ -12,22 +12,25 @@ loginForm.addEventListener("submit", async (e) => {
   }
 
   try {
-    const response = await fetch("http://127.0.0.1:5000/api/auth/login", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ email, password }),
-    });
+    const response = await fetch(
+      "https://codesoft-backend-y6ph.onrender.com/api/auth/login",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email, password }),
+      }
+    );
 
     const data = await response.json();
 
     if (response.ok) {
-      // ✅ OPTIONAL but recommended: store user info
+      // store user info
       localStorage.setItem("userName", data.user.name);
       localStorage.setItem("userId", data.user.id);
 
-      // ✅ Redirect to dashboard
+      // redirect to dashboard
       window.location.href = "dashboard.html";
     } else {
       alert(data.message);
