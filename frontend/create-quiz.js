@@ -2,6 +2,7 @@
 // VARIABLES
 // =====================
 let questions = [];
+const questionCountEl = document.getElementById("questionCount");
 
 const quizForm = document.getElementById("quizForm");
 const addQuestionBtn = document.getElementById("addQuestion");
@@ -43,7 +44,7 @@ addQuestionBtn.addEventListener("click", () => {
   };
 
   questions.push(questionData);
-
+  questionCountEl.textContent = `Questions added: ${questions.length}`;
   console.log("Questions added:", questions);
 
   // Clear inputs after adding question
