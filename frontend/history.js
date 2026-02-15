@@ -21,7 +21,7 @@ fetch(`https://codesoft-backend-y6ph.onrender.com/api/history/${userId}`)
       card.innerHTML = `
         <h3>${item.quizTitle}</h3>
         <p>Score: ${item.score} / ${item.totalQuestions}</p>
-        <p>Date: ${new Date(item.takenAt).toLocaleString()}</p>
+        <p>Date: ${new Date(item.createdAt).toLocaleString()}</p>
       `;
 
       list.appendChild(card);
